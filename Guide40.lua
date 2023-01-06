@@ -1171,22 +1171,18 @@ ZygorGuidesViewer:RegisterGuide("YourNameHere's x7 Alliance Leveling Guide\\Leve
 	step //31
 		'Hearth to Thelsamar|goto Loch Modan,35.1,46.9,3|use Hearthstone##6948|noway|c
 	step //32
-		.goto 23.4,74.6
-		.talk Mountaineer Wallbang
-		..turnin In Defense of the King's Lands (3)##263
-	step //33
 		goto 34.7,43.2
 		.talk Magistrate Bluntnose##1139
 		..turnin Mercenaries##255
-	step //34
+	step //33
 		goto 34.8,47.1
 		.talk Mountaineer Kadrell##1340
 		..accept Report to Mountaineer Rockgar##468
-	step //35
+	step //34
 		goto 24.8,18.4
 		.talk Mountaineer Stormpike##1343
 		..turnin Filthy Paws##307
-	step //36
+	step //35
 		ding 20
 ]])
 
