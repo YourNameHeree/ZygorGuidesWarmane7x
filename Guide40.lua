@@ -1790,7 +1790,6 @@ ZygorGuidesViewer:RegisterGuide("YourNameHere's x7 Alliance Leveling Guide\\Leve
 		goto 56.3,40.5
 		.talk Rethiel the Greenwarden##1244
 		..turnin Fire Taboo##277
-		..accept Blisters on The Land##275
 	step //24
 		goto 29.1,44.8
 		.kill 10 Mottled Raptor|q 294/1
