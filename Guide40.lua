@@ -875,22 +875,21 @@ ZygorGuidesViewer:RegisterGuide("YourNameHere's x7 Alliance Leveling Guide\\Leve
 	step //4
 		'Fly to Auberdine|goto Darkshore,36.4,45.6,0.5|noway|c
 	step //5
-		goto Darkshore,36.6,45.6
-		.talk Gwennyth Bly'Leggonde##10219
-		..accept Washed Ashore (1)##3524
-	step //6
-		goto 36.8,44.3
+		goto Darkshore,36.8,44.3
 		.talk Laird##4200
 		..turnin Flight to Auberdine##6342
 		..accept Return to Nessa##6343
-	step //7
+	step //6
 		'Fly to Rut'theran Village|goto Teldrassil,56.3,92.4,6|noway|c
-	step //8
-		goto Teldrassil,56.3,92.4
+	step //7
 		.talk Nessa Shadowsong##10118
 		..turnin Return to Nessa##6343
-	step //9
+	step //8
 		'Fly to Auberdine|goto Darkshore,36.4,45.6,0.5|noway|c
+	step //9
+		goto 36.6,45.6
+		.talk Gwennyth Bly'Leggonde##10219
+		..accept Washed Ashore (1)##3524
 	step //10
 		goto Darkshore,37,44.1
 		.talk Wizbang Cranktoggle##3666
@@ -974,73 +973,94 @@ ZygorGuidesViewer:RegisterGuide("YourNameHere's x7 Alliance Leveling Guide\\Leve
 		goto 42,28.6
 		.' Click the Buzzbox 411|tip It's a metal box with levers on it, sitting on the beach.
 		..turnin Buzzbox 411##1001
+		..accept Buzzbox 323##1002
 	step //30
-		'Hearth to Auberdine|goto Darkshore,37.0,44.1,0.5|use Hearthstone##6948|noway|c
+		goto 44.2,20.6
+		.' Click the Beached Sea Turtle's hand|tip It looks like a huge sea turtle skeleton on the beach.
+		..accept Beached Sea Turtle##4725 //? or 4725,4727,4731,4732
 	step //31
+		goto 48.4,30.7
+		.from Moonstalker##2069+
+		.get 6 Moonstalker Fang|q 1002/1
+	step //32
+		goto 51.3,24.6
+		.' Click Buzzbox 323|tip It's a metal box with some levers on it, on the side of the road.
+		..turnin Buzzbox 323##1002
+	step //33
+		'Hearth to Auberdine|goto Darkshore,37.0,44.1,0.5|use Hearthstone##6948|noway|c
+	step //34
 		goto 38.8,43.4
 		.talk Tharnariun Treetender##3701
 		..accept Plagued Lands##2118
-	step //32
+	step //35
 		goto 37.4,40.1
 		.talk Thundris Windweaver##3649
 		..accept Tools of the Highborne##958
-	step //33
+	step //36
 		goto 39.4,43.5
 		.talk Terenthis##3693
 		..accept How Big a Threat? (2)##985
-	step //34
+	step //37
 		goto 35.7,43.7
 		.talk Cerellean Whiteclaw##3644
 		..accept For Love Eternal##963
-	step //35
+	step //38
 		goto 40.3,53
 		.kill 8 Blackwood Pathfinder|q 985/1
 		.kill 5 Blackwood Windtalker|q 985/2
-	step //36
+	step //39
 		goto 40.3,59.7
 		.talk Sentinel Tysha Moonblade##3639
 		..accept The Fall of Ameth'Aran##953
-	step //37
+	step //40
 		goto 41.5,59.1
 		.from Cursed Highborne##2176+, Writhing Highborne##2177+, Wailing Highborne##2178+
 		.get 7 Highborne Relic|q 958/1
-	step //38
+	step //41
 		goto 43.3,58.7
 		.' Click the Lay of Ameth'Aran |tip It's a stone tablet laying flat on the ground.
 		.' Read the Lay of Ameth'Aran |q 953/1
-	step //39
+	step //42
 		goto 43.3,59.7
 		.from Anaya Dawnrunner##3667
 		.get Anaya's Pendant|q 963/1
-	step //40
+	step //43
 		goto 42.6,63.1
 		.' Click the Fall of Ameth'Aran|tip It's a stone tablet standing upright on the ground.
 		.' Read the Fall of Ameth'Aran|goal Read the Fall of Ameth'Aran|q 953/2
-	step //41
+	step //44
+		goto 42.4,61.8
+		.' Click the Ancient Flame|tip It's a stone podium with a green coming out of the top of it, inside a dark colored broken gazebo.
+		.' Destroy the seal at the ancient flame|goal Destroy the seal at the ancient flame|q 957/1
+	step //45
 		goto 40.3,59.7
 		.talk Sentinel Tysha Moonblade##3639
 		..turnin The Fall of Ameth'Aran##953
-	step //42
+	step //46
 		goto 38.4,52.9
 		.' Use Tharnariun's Hope on a Rabid Thistle Bear|use Tharnariun's Hope##7586
 		.' Capture a Rabid Thistle Bear|goal Rabid Thistle Bear Captured|q 2118/1
-	step //43
+	step //47
+		goto 44.2,36.3
+		.talk Asterion##3650
+		..turnin Bashal'Aran (4)##957
+	step //48
 		goto 37.4,40.1
 		.talk Thundris Windweaver##3649
 		..turnin Tools of the Highborne##958
-	step //44
+	step //49
 		goto 38.8,43.4
 		.talk Tharnariun Treetender##3701
 		..turnin Plagued Lands##2118
-	step //45
+	step //50
 		goto 39.4,43.5
 		.talk Terenthis##3693
 		..turnin How Big a Threat? (2)##985
-	step //46
+	step //51
 		goto 35.7,43.7
 		.talk Cerellean Whiteclaw##3644
 		..turnin For Love Eternal##963
-	step //47
+	step //52
 		ding 20
 ]])
 
